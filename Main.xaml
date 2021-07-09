@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1204,10407" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="828,10698" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -36,7 +36,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="30">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -67,10 +67,9 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="770,10342" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="770,10633" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
     </Sequence.Variables>
@@ -79,13 +78,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="728,10250" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.runt.com.co/consultaCiudadana/#/consultaVehiculo">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="728,10541" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.runt.com.co/consultaCiudadana/#/consultaVehiculo">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="694,10149" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="694,10440" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="datafinal" />
             </Sequence.Variables>
@@ -103,13 +102,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:BuildDataTable>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="652,9797" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\PRUEBAS RPA\OneDrive - Tessi\DOCUMENTOS ROBOTS\FUN\FUN VEHICULO 1.xlsm">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="652,10088" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\jparra\OneDrive\RPA\FUN\FUN VEHICULO 1.xlsm">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="618,9688" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="618,9979" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="datatable" />
                     </Sequence.Variables>
@@ -131,13 +130,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ExcelReadRange>
-                    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[datatable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="576,9497" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[datatable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="576,9788" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,9350" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,9641" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="placa" />
                               <Variable x:TypeArguments="x:String" Name="tipoidentificacion" />
@@ -175,6 +174,7 @@
                               <Variable x:TypeArguments="x:Boolean" Name="catpchaError" />
                               <Variable x:TypeArguments="x:Boolean" Name="error404" />
                               <Variable x:TypeArguments="x:String" Name="cliente" />
+                              <Variable x:TypeArguments="x:String" Name="captchaLetras" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -258,8 +258,23 @@
                                 </ui:Target>
                               </ui:SetValue.Target>
                             </ui:SetValue>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Resuelva el Captcha&quot;]" />
-                            <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="484,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Ingrese los caracteres" Title="Resuelva el Captcha">
+                              <ui:InputDialog.Result>
+                                <OutArgument x:TypeArguments="x:String">[captchaLetras]</OutArgument>
+                              </ui:InputDialog.Result>
+                            </ui:InputDialog>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  captchatxt'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[captchaLetras]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1b88738-5e8d-4689-813c-586c43f0fe3c" InformativeScreenshot="989b77f81db8bcde21e68b523f0c5fac" Selector="&lt;webctrl id='captchatxt' tag='INPUT' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
                             <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  tipoConsulta'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
@@ -694,31 +709,31 @@
                                 <OutArgument x:TypeArguments="x:String">[capacidadCarga]</OutArgument>
                               </ui:GetValue.Value>
                             </ui:GetValue>
-                            <ui:ExcelWriteCell Cell="[&quot;AV&quot;+contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+capacidadCarga+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;W&quot;+contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_44" SheetName="IBL2017" Text="[tipoidentificacion]" />
-                            <ui:ExcelWriteCell Cell="[&quot;X&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="IBL2017" Text="[identificacion]" />
-                            <ui:ExcelWriteCell Cell="[&quot;Y&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="IBL2017" Text="[placa]" />
-                            <ui:ExcelWriteCell Cell="[&quot;Z&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+modelo+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AA&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+tiposervicio+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AB&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+clasevehiculo+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AC&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+marca+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AD&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+linea+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AE&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_9" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+modelo+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AF&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_10" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+color+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AG&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_11" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+numeroserie+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AH&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+numeromotor+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AI&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_13" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+numerochasis+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AJ&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_14" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+numerovin+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AK&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_15" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+cilindraje+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AL&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_16" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+tipocarroceria+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AM&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_17" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+tipocombustible+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AV&quot;+contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="IBL2017" Text="[capacidadCarga.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;W&quot;+contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_44" SheetName="IBL2017" Text="[tipoidentificacion.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;X&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="IBL2017" Text="[identificacion.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;Y&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="IBL2017" Text="[placa.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;Z&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="IBL2017" Text="[modelo.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AA&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="IBL2017" Text="[tiposervicio.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AB&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="IBL2017" Text="[clasevehiculo.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AC&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_7" SheetName="IBL2017" Text="[marca.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AD&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_8" SheetName="IBL2017" Text="[linea.TrimStart]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AE&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_9" SheetName="IBL2017" Text="[modelo.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AF&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_10" SheetName="IBL2017" Text="[color.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AG&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_11" SheetName="IBL2017" Text="[numeroserie.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AH&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="IBL2017" Text="[numeromotor.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AI&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_13" SheetName="IBL2017" Text="[numerochasis.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AJ&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_14" SheetName="IBL2017" Text="[numerovin.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AK&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_15" SheetName="IBL2017" Text="[cilindraje.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AL&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_16" SheetName="IBL2017" Text="[tipocarroceria.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AM&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_17" SheetName="IBL2017" Text="[tipocombustible.Trim]" />
                             <ui:ExcelWriteCell Cell="[&quot;AN&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_18" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+fechamatricula+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AO&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_24" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+autoridadtransito+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AP&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_19" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+gravamenes+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AQ&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_20" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+tipocombustible+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AR&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_21" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+regrabacionmotor+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AS&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_22" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+regrabacionchasis+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
-                            <ui:ExcelWriteCell Cell="[&quot;AT&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_23" SheetName="IBL2017" Text="[&quot;=TRIM(&quot;+&quot;&quot;&quot;&quot;+regrabacionserie+&quot;&quot;&quot;&quot;+&quot;)&quot;]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AO&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_24" SheetName="IBL2017" Text="[autoridadtransito.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AP&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_19" SheetName="IBL2017" Text="[gravamenes.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AQ&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_20" SheetName="IBL2017" Text="[tipocombustible.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AR&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_21" SheetName="IBL2017" Text="[regrabacionmotor.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AS&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_22" SheetName="IBL2017" Text="[regrabacionchasis.Trim]" />
+                            <ui:ExcelWriteCell Cell="[&quot;AT&quot;+ contador.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_23" SheetName="IBL2017" Text="[regrabacionserie.Trim]" />
                             <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
