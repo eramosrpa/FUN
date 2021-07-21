@@ -819,7 +819,7 @@
                 </ActivityAction>
               </ui:ExcelApplicationScope.Body>
             </ui:ExcelApplicationScope>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="652,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Termino&quot;]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="652,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;PROGRAMA FINALIZADO&quot;]" />
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>
